@@ -79,11 +79,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F3  &kp F4         &kp F5      &kp LS(PRCNT)  &kp LS(PLUS)   &kp F6                        &kp F7        &kp LS(PIPE)  &kp LS(EXCL)  &kp F8        &kp F9         &kp F10
-&kp F2  &kp LS(CARET)  &kp BSLH    &kp LS(COLON)  &kp LS(POUND)  &none                         &none         &kp LS(GT)    &kp LS(STAR)  &kp LS(AMPS)  &kp LS(TILDE)  &kp F11
-&kp F1  &kp MINUS      &kp SQT     &kp DOT        &kp LS(UNDER)  &kp GRAVE                     &kp QUESTION  &kp LS(LPAR)  &kp COMMA     &kp EQUAL     &kp FSLH       &kp F12
-&none   &kp LS(DLLR)   &kp LS(AT)  &kp LS(LT)     &kp LS(DQT)    &kp LS(RBRC)  &none    &none  &kp LS(RPAR)  &kp SEMI      &kp LS(LBRC)  &kp LBKT      &kp RBKT       &none
-                                   &none          &none          &none         &none    &none  &none         &none         &none
+&kp F3  &kp F4      &kp F5       &kp PERCENT    &kp PLUS           &kp F6                           &kp F7                 &kp PIPE              &kp EXCLAMATION  &kp F8         &kp F9     &kp F10
+&kp F2  &kp CARET   &kp BSLH     &kp COLON      &kp HASH           &none                            &none                  &kp GREATER_THAN      &kp ASTERISK     &kp AMPERSAND  &kp TILDE  &kp F11
+&kp F1  &kp MINUS   &kp SQT      &kp DOT        &kp UNDERSCORE     &kp GRAVE                        &kp QUESTION           &kp LEFT_PARENTHESIS  &kp COMMA        &kp EQUAL      &kp FSLH   &kp F12
+&none   &kp DOLLAR  &kp AT_SIGN  &kp LESS_THAN  &kp DOUBLE_QUOTES  &kp RIGHT_BRACE  &none    &none  &kp RIGHT_PARENTHESIS  &kp SEMI              &kp LEFT_BRACE   &kp LBKT       &kp RBKT   &none
+                                 &none          &none              &none            &none    &none  &none                  &none                 &none
             >;
         };
 
