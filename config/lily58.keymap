@@ -40,15 +40,6 @@
         };
     };
 
-    macros {
-        to_russian: to_russian {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog 2 &kp RIGHT_SHIFT &kp RIGHT_ALT>;
-            label = "TO_RUSSIAN";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,11 +52,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&mo 3     &kp N9  &kp N7  &kp N1     &kp N2    &kp N5                                 &kp N4    &kp N3   &kp N0    &kp N8  &kp N6  &mo 3
-&kp LEFT  &kp Q   &kp W   &kp F      &kp P     &kp ESC                                &kp RET   &kp L    &kp U     &kp Y   &kp V   &kp RIGHT
-&kp DOWN  &kp A   &kp R   &kp S      &kp T     &kp G                                  &kp B     &kp N    &kp E     &kp I   &kp O   &kp UP
-&none     &kp Z   &kp X   &kp C      &kp D     &kp B      &to_russian    &to_russian  &kp N     &kp H    &kp M     &kp K   &kp J   &none
-                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 1          &kp RSHFT    &kp BSPC  &kp TAB  &kp LALT
+&mo 3     &kp N9  &kp N7  &kp N1     &kp N2    &kp N5                          &kp N4    &kp N3   &kp N0    &kp N8  &kp N6  &mo 3
+&kp LEFT  &kp Q   &kp W   &kp F      &kp P     &kp ESC                         &kp RET   &kp L    &kp U     &kp Y   &kp V   &kp RIGHT
+&kp DOWN  &kp A   &kp R   &kp S      &kp T     &kp G                           &kp B     &kp N    &kp E     &kp I   &kp O   &kp UP
+&none     &kp Z   &kp X   &kp C      &kp D     &kp B      &tog 2    &tog 2     &kp N     &kp H    &kp M     &kp K   &kp J   &none
+                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 1     &kp RSHFT  &kp BSPC  &kp TAB  &kp LALT
             >;
         };
 
