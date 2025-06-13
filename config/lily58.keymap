@@ -43,7 +43,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        main_layer {
+        layer_0 {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -55,12 +55,22 @@
 &mo 3     &kp N9  &kp N7  &kp N1     &kp N2    &kp N5                          &kp N4    &kp N3   &kp N0    &kp N8  &kp N6  &mo 3
 &kp LEFT  &kp Q   &kp W   &kp F      &kp P     &kp ESC                         &kp RET   &kp L    &kp U     &kp Y   &kp V   &kp RIGHT
 &kp DOWN  &kp A   &kp R   &kp S      &kp T     &kp G                           &kp B     &kp N    &kp E     &kp I   &kp O   &kp UP
-&none     &kp Z   &kp X   &kp C      &kp D     &kp B      &tog 2    &tog 2     &kp N     &kp H    &kp M     &kp K   &kp J   &none
-                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 1     &kp RSHFT  &kp BSPC  &kp TAB  &kp LALT
+&none     &kp Z   &kp X   &kp C      &kp D     &kp B      &tog 1    &tog 1     &kp N     &kp H    &kp M     &kp K   &kp J   &none
+                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 2     &kp RSHFT  &kp BSPC  &kp TAB  &kp LALT
             >;
         };
 
         layer_1 {
+            bindings = <
+&kp LEFT  &kp N9  &kp N7  &kp N1     &kp N2    &kp N5                          &kp N4    &kp N3   &kp N0     &kp N8   &kp N6            &kp RIGHT
+&kp SQT   &kp Q   &kp W   &kp E      &kp R     &kp T                           &kp Y     &kp U    &kp I      &kp O    &kp P             &kp RIGHT_BRACKET
+&kp ESC   &kp A   &kp S   &kp D      &kp F     &kp G                           &kp H     &kp J    &kp K      &kp L    &kp SEMI          &kp ENTER
+&kp DOWN  &kp Z   &kp X   &kp C      &kp V     &kp B      &tog 1    &tog 1     &kp N     &kp M    &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp UP
+                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 2     &kp RSHFT  &kp BSPC  &kp TAB  &kp LALT
+            >;
+        };
+
+        layer_2 {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -75,20 +85,6 @@
 &none   &kp LS(DLLR)   &kp LS(AT)  &kp LS(LT)     &kp LS(DQT)    &kp LS(RBRC)  &none    &none  &kp LS(RPAR)  &kp SEMI      &kp LS(LBRC)  &kp LBKT      &kp RBKT       &none
                                    &none          &none          &none         &none    &none  &none         &none         &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_2 {
-            bindings = <
-&kp LEFT  &kp N9  &kp N7  &kp N1     &kp N2    &kp N5                          &kp N4    &kp N3   &kp N0     &kp N8   &kp N6            &kp RIGHT
-&kp SQT   &kp Q   &kp W   &kp E      &kp R     &kp T                           &kp Y     &kp U    &kp I      &kp O    &kp P             &kp RIGHT_BRACKET
-&kp ESC   &kp A   &kp S   &kp D      &kp F     &kp G                           &kp H     &kp J    &kp K      &kp L    &kp SEMI          &kp ENTER
-&kp DOWN  &kp Z   &kp X   &kp C      &kp V     &kp B      &tog 2    &tog 2     &kp N     &kp M    &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp UP
-                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 1     &kp RSHFT  &kp BSPC  &kp TAB  &kp LALT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_3 {
@@ -106,8 +102,6 @@
 &bootloader  &sys_reset      &none          &none          &none          &none          &none    &none  &none          &none          &none          &none          &sys_reset      &bootloader
                                             &none          &none          &none          &none    &none  &none          &none          &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
