@@ -65,7 +65,7 @@
 &kp LEFT  &kp Q   &kp W   &kp F      &kp P     &kp ESC                                &kp RET   &kp L    &kp U     &kp Y   &kp V   &kp RIGHT
 &kp DOWN  &kp A   &kp R   &kp S      &kp T     &kp G                                  &kp B     &kp N    &kp E     &kp I   &kp O   &kp UP
 &none     &kp Z   &kp X   &kp C      &kp D     &kp B      &to_russian    &to_russian  &kp N     &kp H    &kp M     &kp K   &kp J   &none
-                          &kp LCTRL  &kp LGUI  &kp SPACE  &kp SPACE      &kp RSHFT    &kp BSPC  &kp TAB  &kp LALT
+                          &kp LCTRL  &kp LGUI  &kp SPACE  &sl 1          &kp RSHFT    &kp BSPC  &kp TAB  &kp LALT
             >;
         };
 
@@ -79,7 +79,7 @@
 
             bindings = <
 &kp F3  &kp F4         &kp F5      &kp LS(PRCNT)  &kp LS(PLUS)   &kp F6                        &kp F7        &kp LS(PIPE)  &kp LS(EXCL)  &kp F8        &kp F9         &kp F10
-&kp F2  &kp LS(CARET)  &kp BSLH    &kp LS(COLON)  &kp LS(POUND)  &kp ESC                       &kp F7        &kp LS(GT)    &kp LS(STAR)  &kp LS(AMPS)  &kp LS(TILDE)  &kp F11
+&kp F2  &kp LS(CARET)  &kp BSLH    &kp LS(COLON)  &kp LS(POUND)  &none                         &none         &kp LS(GT)    &kp LS(STAR)  &kp LS(AMPS)  &kp LS(TILDE)  &kp F11
 &kp F1  &kp MINUS      &kp SQT     &kp DOT        &kp LS(UNDER)  &kp GRAVE                     &kp QUESTION  &kp LS(LPAR)  &kp COMMA     &kp EQUAL     &kp FSLH       &kp F12
 &none   &kp LS(DLLR)   &kp LS(AT)  &kp LS(LT)     &kp LS(DQT)    &kp LS(RBRC)  &none    &none  &kp LS(RPAR)  &kp SEMI      &kp LS(LBRC)  &kp LBKT      &kp RBKT       &none
                                    &none          &none          &none         &none    &none  &none         &none         &none
