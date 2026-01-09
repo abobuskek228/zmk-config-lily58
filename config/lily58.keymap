@@ -83,7 +83,7 @@
 &kp F2  &kp CARET   &kp BSLH     &kp COLON      &kp HASH           &none                            &none                  &kp GREATER_THAN      &kp ASTERISK     &kp AMPERSAND  &kp TILDE  &kp F11
 &kp F1  &kp MINUS   &kp SQT      &kp DOT        &kp UNDERSCORE     &kp GRAVE                        &kp QUESTION           &kp LEFT_PARENTHESIS  &kp COMMA        &kp EQUAL      &kp FSLH   &kp F12
 &none   &kp DOLLAR  &kp AT_SIGN  &kp LESS_THAN  &kp DOUBLE_QUOTES  &kp RIGHT_BRACE  &none    &none  &kp RIGHT_PARENTHESIS  &kp SEMI              &kp LEFT_BRACE   &kp LBKT       &kp RBKT   &none
-                                 &none          &none              &none            &none    &none  &none                  &none                 &none
+                                 &kp LC(X)      &kp LC(C)          &kp LC(V)        &none    &none  &none                  &none                 &none
             >;
         };
 
